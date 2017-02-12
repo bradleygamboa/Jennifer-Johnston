@@ -5267,6 +5267,7 @@ img.mfp-img {
 .hero-unit .hero-content .hero-text .looper {
   margin-top: 20px;
 }
+/*Move text on main screen*/
 .hero-unit .hero-content .hero-text p {
   display: inline-block;
   vertical-align: middle;
@@ -5275,7 +5276,7 @@ img.mfp-img {
   *display: inline;
   font-size: 2em;
   color: #fff;
-  padding: 0 10px;
+  padding:  250px 0 0 10px;
 }
 @media screen and (max-width: 768px) {
   .hero-unit .hero-content .hero-text p {
@@ -5941,151 +5942,6 @@ img.mfp-img {
   opacity: 0;
 }
 
-/* ------------------ CONTACT ------------------ */
-/* --------------------- */
-/* CONTACT INFO
-/* --------------------- */
-.contact-info li {
-  padding-bottom: 30px;
-}
-.contact-info h3, .contact-info i {
-  color: #646464;
-}
-.contact-info h3, .contact-info p {
-  padding-left: 52px;
-}
-.contact-info p {
-  font-size: 14px;
-}
-.contact-info i {
-  font-size: 40px;
-}
-@media screen and (max-width: 768px) {
-  .contact-info {
-    text-align: center;
-  }
-  .contact-info i {
-    width: 100%;
-  }
-  .contact-info h3, .contact-info p {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact {
-    padding-bottom: 0;
-  }
-}
-/* --------------------- */
-/* CONTACT FORM
-/* --------------------- */
-.contact-form {
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 12px;
-  margin-bottom: 7px;
-  min-height: 3em;
-  border: none;
-  background-color: #f2f2f2;
-}
-.contact-form .form-group {
-  margin-bottom: 0;
-}
-.contact-form textarea {
-  width: 100%;
-  display: block;
-  padding: 14px;
-  min-height: 130px;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-  outline: none;
-}
-.contact-form .alert,
-.contact-form label {
-  display: none;
-}
-@media screen and (max-width: 480px) {
-  .contact-form .btn-primary {
-    width: 100%;
-  }
-}
-
-/* ------------------ TWITTER STREAM ------------------ */
-.twitter-stream {
-  text-align: center;
-  padding: 40px 0;
-  background-color: #00aeef;
-}
-@media screen and (max-width: 480px) {
-  .twitter-stream {
-    padding: 25px 0;
-  }
-}
-.twitter-stream .twitter-icon {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-  background-color: #00a6e7;
-}
-.twitter-stream .twitter-icon i {
-  font-size: 30px;
-  line-height: 50px;
-  color: #36c3ff;
-}
-.twitter-stream #tweet ul {
-  list-style-type: none;
-}
-.twitter-stream #tweet ul li {
-  color: #fff;
-}
-.twitter-stream #tweet ul li a {
-  text-decoration: underline;
-  color: #fff;
-  text-overflow: ellipsis;
-}
-.twitter-stream #tweet ul li a span {
-  word-wrap: break-word;
-}
-.twitter-stream #tweet ul li a:hover {
-  text-decoration: none;
-}
-.twitter-stream #tweet ul li .timePosted {
-  font-size: 0.8em;
-}
-
 /* ------------------ FOOTER ------------------ */
 #footer {
   padding-top: 20px;
@@ -6136,4 +5992,12 @@ img.mfp-img {
   font-size: 0.8em;
   line-height: 36px;
   text-align: center;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
