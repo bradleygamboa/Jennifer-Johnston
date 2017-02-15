@@ -237,7 +237,6 @@ jQuery(function($) {
                 // modify item title to include description
                 currentItem = $(this.items)[this.index];
                 originalTitle = currentItem.title;
-                currentItem.title = '<h3>' + originalTitle + '</h3>' + '<p>' + $(currentItem).parents('.work-item').find('img').attr('alt') + '</p>';
 
                 // adding animation
                 this.st.mainClass = 'mfp-fade';
@@ -274,59 +273,6 @@ jQuery(function($) {
             selector: "[data-toggle=tooltip]",
             container: "body"
         });
-    }
-
-
-    /*----------------------/
-    /* AJAX CONTACT FORM
-    /*---------------------*/
-
-    $('#contact-form').parsley();
-
-    $('.contact-form form').submit(function(e) {
-
-        e.preventDefault();
-
-        if (!$(this).parsley('isValid'))
-            return;
-
-        $theForm = $(this);
-        $btn = $(this).find('#submit-button');
-        $btnText = $btn.text();
-        $alert = $(this).parent().find('.alert');
-
-        $btn.find('.loading-icon').addClass('fa-spinner fa-spin ');
-        $btn.prop('disabled', true).find('span').text("Sending...");
-
-        $.post('contact.php', $(this).serialize(), function(data) {
-
-                $message = data.message;
-
-                if (data.result == true) {
-                    $theForm.slideUp('medium', function() {
-                        $alert.removeClass('alert-danger');
-                        $alert.addClass('alert-success').html($message).slideDown('medium');
-                    });
-                } else {
-                    $alert.addClass('alert-danger').html($message).slideDown('medium');
-                }
-
-                $btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
-                $btn.prop('disabled', false).find('span').text($btnText);
-
-            })
-            .fail(function() { console.log('AJAX Error'); });
-
-    });
-
-
-    // init scrollspy except on Opera, it doesn't work because body has 100% height
-    if (!navigator.userAgent.match("Opera/")) {
-        $('body').scrollspy({
-            target: '#main-nav'
-        });
-    } else {
-        $('#main-nav .nav li').removeClass('active');
     }
 
 });

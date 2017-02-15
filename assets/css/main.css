@@ -5436,178 +5436,6 @@ img.mfp-img {
   text-align: center;
 }
 
-/* --------------------- */
-/* SOCIAL NETWORK
-/* --------------------- */
-#social-network {
-  background-image: url('../img/sky.jpg?1394021998');
-  text-align: center;
-}
-#social-network h2 {
-  color: #fff;
-  font-size: 3em;
-}
-@media screen and (max-width: 480px) {
-  #social-network h2 {
-    font-size: 2em;
-  }
-}
-
-.social-icon li {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 30px;
-}
-.social-icon li a {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  display: block;
-  width: 60px;
-  height: 60px;
-  font-size: 33px;
-  line-height: 57px;
-  text-align: center;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.social-icon li a:hover {
-  background-color: #fff;
-  color: #00aeef;
-}
-@media screen and (max-width: 480px) {
-  .social-icon {
-    width: 100%;
-    text-align: center;
-  }
-  .social-icon li {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-/* --------------------- */
-/* SKILLS
-/* --------------------- */
-.skills .skill-name {
-  display: block;
-  font-size: 1.5em;
-  color: #646464;
-  font-weight: 400;
-}
-
-.chart {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 30px;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.chart .percent {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  line-height: 150px;
-  z-index: 2;
-  font-family: "Dosis", sans-serif;
-  font-size: 2em;
-  color: #ffae3f;
-}
-.chart .percent:after {
-  margin-left: 0.1em;
-}
-
-/* ------------------ SERVICES ------------------ */
-.service-item {
-  margin-bottom: 60px;
-}
-.service-item .service-icon {
-  position: absolute;
-  top: 0;
-  font-size: 5em;
-  color: #ffae3f;
-}
-.service-item .service-text {
-  margin-left: 100px;
-  overflow: hidden;
-}
-.service-item .service-text h3 {
-  margin-top: 6px;
-  color: #646464;
-}
-.service-item .service-text p {
-  margin-bottom: 0;
-}
-.service-item .service-text a.read-more {
-  color: #ffae3f;
-}
-.service-item .service-text a.read-more span {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  font-size: 0.8em;
-  margin-left: -80px;
-}
-@media screen and (max-width: 1200px) {
-  .service-item .service-text a.read-more span {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-    margin-left: 0;
-  }
-}
-.service-item .service-text a.read-more i {
-  position: relative;
-  top: 3px;
-  font-size: 1em;
-}
-.service-item .service-text a.read-more:hover {
-  text-decoration: none;
-}
-.service-item .service-text a.read-more:hover span {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  margin-left: 0;
-}
-
-@media screen and (max-width: 480px) {
-  .services {
-    padding-bottom: 0;
-  }
-}
 /* ------------------ WORKS ------------------ */
 /* ----------------------------- */
 /* RECOMMENDED ISOTOPE STYLES 
@@ -5860,7 +5688,7 @@ button.mfp-close,
   cursor: pointer;
 }
 
-.mfp-bottom-bar {
+/*.mfp-bottom-bar {
   padding: 10px;
   background: rgba(0, 0, 0, 0.7);
   top: 90%;
@@ -5871,7 +5699,7 @@ button.mfp-close,
 }
 .mfp-bottom-bar p {
   font-size: 0.9em;
-}
+}*/
 
 img.mfp-img {
   padding: 0;
@@ -5995,6 +5823,10 @@ img.mfp-img {
 }
 
 .carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-inner > .item > a > img {
     margin: 0 auto;
 }
 
