@@ -88,10 +88,10 @@ jQuery(function($) {
             slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
             thumb_links: 0, // Individual thumb links for each slide
             slides: [ // Slideshow Images
-                { image: 'assets/img/sliders/slider4.jpg', title: '<div class="hero-text"><h2 class="hero-heading">Jennifer Johnston</h2><p>Makeup Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/slider1.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Bridal Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/slider2.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Hair Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/slider3.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Commercial Editorial</p></div>', thumb: '', url: '' }
+                { image: 'assets/img/sliders/jenn1.jpg', title: '<div class="hero-text"><h2 class="hero-heading">Jennifer Johnston</h2><p>Makeup Editorial</p></div>', thumb: '', url: '' },
+                { image: 'assets/img/sliders/jenn2.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Bridal Editorial</p></div>', thumb: '', url: '' },
+                { image: 'assets/img/sliders/jenn3.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Hair Editorial</p></div>', thumb: '', url: '' },
+                { image: 'assets/img/sliders/jenn6.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Commercial Editorial</p></div>', thumb: '', url: '' }
             ],
         });
 
