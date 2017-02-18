@@ -50,7 +50,7 @@ jQuery(function($) {
 
     function setNavbarTransparent() {
         $('.navbar').removeClass('navbar-light');
-        $('.navbar-brand img').attr('src', 'assets/img/jj-logo-white.png');
+        $('.navbar-brand img').attr('src', 'assets/img/jj-logo-black.png');
     }
 
     // hide collapsible menu
@@ -72,54 +72,6 @@ jQuery(function($) {
 
 
     /*----------------------/
-    /* HERO UNIT SUPERSIZED
-    /*---------------------*/
-
-    if ($('.slideshow').length > 0) {
-        $.supersized({
-
-            // Functionality		
-            autoplay: 1, // Slideshow starts playing automatically
-            slide_interval: 3000, // Length between transitions
-            transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-            transition_speed: 1000, // Speed of transition
-
-            // Components
-            slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
-            thumb_links: 0, // Individual thumb links for each slide
-            slides: [ // Slideshow Images
-                { image: 'assets/img/sliders/jenn1.jpg', title: '<div class="hero-text"><h2 class="hero-heading">Jennifer Johnston</h2><p>Makeup Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/jenn2.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Bridal Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/jenn3.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Hair Editorial</p></div>', thumb: '', url: '' },
-                { image: 'assets/img/sliders/jenn4.jpg', title: '<div class="hero-text"><h2 class="hero-heading">&nbsp;</h2><p>Commercial Editorial</p></div>', thumb: '', url: '' }
-            ],
-        });
-
-        $(".fa-pause, .fa-play").click(function() {
-            $(this).toggleClass("fa-pause fa-play");
-        });
-    }
-
-
-    /*----------------------/
-    /* PARALLAX
-    /*---------------------*/
-
-    $('.full-width-parallax').parallax(0, 0.1);
-
-    function setParallax() {
-        if ($(window).width() > 1024) {
-            $('.full-width-parallax').parallax(0, 0.1);
-        }
-    }
-
-    setParallax();
-
-    $(window).resize(function() {
-        setParallax();
-    });
-
-    /*----------------------/
     /* SCROLL TO TOP
     /*---------------------*/
 
@@ -139,69 +91,6 @@ jQuery(function($) {
                 scrollTop: 0
             }, 800, 'easeInOutExpo');
         });
-    }
-
-
-    /*----------------------/
-    /* WORKS
-    /*---------------------*/
-
-    var $container = $('.work-item-list');
-
-    new imagesLoaded($container, function() {
-        $container.isotope({
-            itemSelector: '.work-item'
-        });
-    });
-
-
-    $('.work-item-filters a').click(function(e) {
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
-        });
-
-        $('.work-item-filters a').removeClass('active');
-        $(this).addClass('active');
-
-        return false;
-    });
-
-    var originalTitle, currentItem;
-
-    $('.media-popup').magnificPopup({
-        type: 'image',
-        callbacks: {
-            beforeOpen: function() {
-
-                // modify item title to include description
-                currentItem = $(this.items)[this.index];
-                originalTitle = currentItem.title;
-
-                // adding animation
-                this.st.mainClass = 'mfp-fade';
-            },
-            close: function() {
-                currentItem.title = originalTitle;
-            }
-        }
-
-    });
-
-
-    /*----------------------/
-    /* SOCIAL NETWORK
-    /*---------------------*/
-
-    if ($(window).width() > 1024) {
-        wow = new WOW({
-            animateClass: 'animated'
-        });
-
-        wow.init();
-    } else {
-        $('.wow').attr('class', '');
     }
 
 
