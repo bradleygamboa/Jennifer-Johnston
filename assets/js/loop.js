@@ -45,12 +45,12 @@ jQuery(function($) {
     /* navbar setting functions */
     function setNavbarLight() {
         $('.navbar').addClass('navbar-light');
-        $('.navbar-brand img').attr('src', 'assets/img/jj-logo-black.png');
+        $('.navbar-brand img').attr("src","assets/img/jj-logo-small.png");
     }
 
     function setNavbarTransparent() {
         $('.navbar').removeClass('navbar-light');
-        $('.navbar-brand img').attr('src', 'assets/img/jj-logo-black.png');
+        $('.navbar-brand img').attr("src","assets/img/jj-logo-black.png");
     }
 
     // hide collapsible menu
@@ -92,7 +92,6 @@ jQuery(function($) {
             }, 800, 'easeInOutExpo');
         });
     }
-
 
     /*----------------------/
     /* TOOLTIP
