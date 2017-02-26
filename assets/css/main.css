@@ -79,6 +79,11 @@ body #jpreBar {
     src: url('../fonts/brankic.eot?1392697956');
     src: url('../fonts/brankic.eot?&1392697956#iefix') format('embedded-opentype'), url('../fonts/brankic.svg?1392697956') format('svg'), url('../fonts/brankic.ttf?1392697956') format('truetype'), url('../fonts/brankic.woff?1392697956') format('woff');
 }
+@font-face {
+    font-family: "futura";
+    src: url('../fonts/futuracm.otf');
+}
+
 
 
 /* --------------------- */
@@ -377,12 +382,12 @@ a:focus {
 
 .section-heading h2,
 .section-heading p {
-    font-family: "Dosis", sans-serif;
+    font-family: "futura";
 }
 
 .section-heading h2 {
-    font-size: 3em;
-    color: #ffae3f;
+    font-size: 2em;
+    color: black;
 }
 
 .section-heading p {
@@ -6006,7 +6011,7 @@ img.mfp-img {
 @media only screen and (min-width: 1024px) and (max-width: 1223px){
     .navbar-brand img { 
         margin-top: 10px;
-        margin-left: 225px;
+        margin-left: 200px;
 }
 
 }
