@@ -5990,6 +5990,9 @@ img.mfp-img {
     transform: translate(-50%, -50%);
 }
 
+.post > .video {
+    margin: 0 auto;
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .carousel-caption{
         position: absolute;
