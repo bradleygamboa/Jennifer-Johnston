@@ -39,6 +39,9 @@ h6 {
     margin-top: 0;
 }
 
+.media{
+    margin: 25px 25px 25px 25px;
+}
 
 /* ------------------ GENERAL STYLES ------------------ */
 
@@ -6024,6 +6027,8 @@ img.mfp-img {
         margin-top: 10px;
         margin-left: 400px;
 }
-
+    p{
+        width: 30%
+    }
 }
 

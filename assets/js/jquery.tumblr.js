@@ -30,7 +30,7 @@
               return '<div class="link"><a href="{link_url}" target="_blank">{link_url}</a></div><div class="copy">{link_description}</div>'
             },
             quote:   '<div class="quote">{quote_text}</div><div class="copy">{quote_source}</div>',
-            photo:   '<div class="media"><img src="{photo_url_500}" alt="" /></div><div class="copy">{photo_caption}</div>',
+            photo:   '<div class="media"><img class="img-responsive" src="{photo_url_500}" alt="" /></div><div class="copy">{photo_caption}</div>',
             text:    '<div class="title">{regular_title}</div><div class="copy">{regular_body}</div>',
             video:   '<div class="media">{video_player_500}</div><div class="copy">{video_caption}</div>'
         };
