@@ -6032,10 +6032,16 @@ img.mfp-img {
         text-align: justify;
         text-justify: inter-word;
     }
+    
+    p.copyright{
+        width: 100%
+    }
 
     .media{
     margin: 25px 25px 25px 25px;
 }
+
+
 
 }
 
