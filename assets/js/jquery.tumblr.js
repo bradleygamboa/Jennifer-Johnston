@@ -118,7 +118,7 @@
          * Get data from tumblr, listify it, and load it into the widget
          */
         var target_selector = this;
-        $.getJSON('http://'+s.hostname+'/api/read/json?callback=?', s.options, function(response) {
+        $.getJSON('https://'+s.hostname+'/api/read/json?callback=?', s.options, function(response) {
             var list = $('<ul class="post_list">');
             var posts = $.map(response.posts, prepare_template_data);
             //posts = $.grep(posts, s.filter).sort(s.comparator).slice(0, s.count);//TODO: Implement
