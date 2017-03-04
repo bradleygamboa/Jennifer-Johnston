@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <div class="navbar navbar-fixed-top">
         <div class="container">
@@ -31,9 +32,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand">
-                        <img src="assets/img/jj-logo-black.png" alt="Jennifer Johnston Logo" />
-                    </a>
+                <a class="navbar-brand">
+                    <img src="assets/img/jj-logo-black.png" alt="Jennifer Johnston Logo" />
+                </a>
             </div>
             <nav class="navbar-collapse collapse" id="main-nav" role="navigation">
                 <ul class="nav navbar-nav navbar-right nav-text-light">
@@ -222,7 +223,14 @@
         </div>
         <!-- END FILM -->
         <!-- LIFESTYLE -->
-        <script type=’text/javascript’ src=’http://darklordofallstormageddon-blog.tumblr.com/js’></script>
+        <div id="lifestyle" class="section works" style="background-color: white;">
+            <div class="section-heading">
+                <h2>Lifestyle</h2>
+            </div>
+            <center>
+                <div id="posts_container"></div>
+            </center>
+        </div>
         <!-- END LIFESTYLE -->
     </div>
     <!-- END MAIN CONTENT -->
@@ -255,6 +263,14 @@
     <script src="assets/js/plugins/easypiechart/jquery.easypiechart.min.js"></script>
     <script src="assets/js/plugins/waypoints/waypoints.min.js"></script>
     <script src="assets/js/loop.js"></script>
+        <script src="assets/js/jquery.tumblr.js"></script>
+        <script language="javascript">
+    $(document).ready(function() {
+        $('#posts_container').tumblr({
+            hostname: 'darklordofallstormageddon-blog.tumblr.com'
+        });
+    });
+    </script>
     <script type="text/javascript">
     $('.carousel').carousel({
         interval: 5000 //changes the speed
